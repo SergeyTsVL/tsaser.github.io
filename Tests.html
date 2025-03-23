@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- google font ends here -->
+  <!-- font awesome 6.4.2 -->
+  <script src="https://kit.fontawesome.com/367f8e95b8.js" crossorigin="anonymous"></script>
+  <!-- font awesome ends here -->
+  <link rel="stylesheet" href="style.css">
+  <title>Мое портфолио</title>
+</head>
+
+
+
+
+
+<body>
+  <section class="resume-container">
+    <div class="left-sidebar">
+      <img src="./img/headshot.jpg" alt="headshot">
+      <h3 class="heading">О себе</h3>
+      <ul>
+        <li>Я дипломированный Python - разработчик. Целью и миссией моей работы, является получение навыков
+          программирования на более высоком уровне в самых востребованных областях. В своих работах, стараюсь применять
+          понятный и легко читаемый код, руководствуюсь принципами корпоративной дисциплины (сроки сдачи работ, деловой
+          этикет)
+        </li
+      </ul>
+      <h3 class="heading">Мои контакты</h3>
+      <address class="contact"><i class="fa-solid fa-square-phone"></i> 8-950-578-8102 </address>
+      <address class="contact"><i class="fa-solid fa-square-envelope"></i> <a href="mailto:tsarskiytsarskiy@mail.ru"
+                                                                              target="_blank">tsarskiytsarskiy@mail.ru</address>
+      <address class="contact"><i class="fa-solid fa-square-envelope"></i> <a href="https://t.me/jaga_jagaga">
+        t.me/jaga_jagaga</a></address>
+      <h3 class="heading">Образование</h3>
+      <p class="course">Национальный исследовательский Томский Политехнический Университет </p>
+      <h3 >Инженер-теплотехник (высшее техническое).</h3>
+      <p class="timeline">2007 - 2013</p>
+      <p class="course">Университет Urban</p>
+      <h3 >Python-разработчик</h3>
+      <p class="timeline">2024</p>
+
+      <h3 class="heading">Навыки</h3>
+      <ul>
+        <li>Python: знание синтаксиса, работа с пакетами (использование, создание и публикация);</li>
+        <li>ООП: понимание принципов и использование в Python; </li>
+        <li>Функциональное программирование на Python: map, filter, reduce, функции высшего порядка, замыкания,
+          декоратор;</li>
+        <li>Функции высшего порядка, замыкания, декораторы; </li>
+        <li>Опыт написания веб-приложений с нуля, опыт работы с Django ORM; </li>
+        <li>Написание SQL-запросов различной сложности: работа с агрегатными функциями, работа с несколькими таблицами
+          с использованием JOIN, опыт работы с PostgreSQL и SQLite; </li>
+        <li>Создания простых вэб- страниц. понимание структуры запросов HTTP и ответов;</li>
+        <li>Ветки Git, работа с удаленными репозиториями, пул-реквесты;</li>
+        <li>Написание docker-файлов и запуск контейнеров;</li>
+
+        <li>Работа с терминалом и виртуальными окружениями;</li>
+        <li>Навыки отладки программ в PyCharm; </li>
+        <li>Написание unit-тестов; </li>
+        <li>Понимание принципов разработки ПО. </li>
+      </ul>
+    </div><!-- left-sidebar -->
+
+
+
+
+
+
+
+<!--     secondary -->
+    <main class="main-body">
+      <h1><span class="w900">Сергей</span><br>Цасерский</h1>
+      <h2></h2>
+      <p class="designation">PYTHON-Разработчик</p>
+
+
+
+
+       <style>
+
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #193549;
+        }
+
+        /* Контейнер для кирпичей */
+        .bricks-container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Стили для отдельных кирпичей */
+        .brick {
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Различные цвета для кирпичей */
+        .brick:nth-child(1) { background-color: #ff6b6b; }
+        .brick:nth-child(2) { background-color: #4ecdc4; }
+        .brick:nth-child(3) { background-color: #45b7d1; }
+        .brick:nth-child(4) { background-color: #96ceb4; }
+        .brick:nth-child(5) { background-color: #ffeead; }
+        .brick:nth-child(6) { background-color: #d4a373; }
+
+        /* Стили для ссылок внутри кирпичей */
+        .brick a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Эффект при наведении */
+        .brick:hover {
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 600px) {
+            .bricks-container {
+                grid-template-columns: 1fr;
+            }
+        }
+      </style>
+      <div class="bricks-container">
+        <div class="brick">
+          <a href="http://htmlpreview.github.io/?https://github.com/SergeyTsVL/tsaser.github.io/blob/main/index.html">Все работы</a>
+        </div>
+        <div class="brick">
+          <a href="http://htmlpreview.github.io/?https://github.com/SergeyTsVL/tsaser.github.io/blob/main/Tests.html">Боты</a>
+        </div>
+        <div class="brick">
+          <a href="http://htmlpreview.github.io/?https://github.com/SergeyTsVL/tsaser.github.io/blob/main/ML.html">Машинное обучение</a>
+        </div>
+        <div class="brick">
+          <a href="http://htmlpreview.github.io/?https://github.com/SergeyTsVL/tsaser.github.io/blob/main/Analis.html">Анализ данных</a>
+        </div>
+        <div class="brick">
+          <a href="http://htmlpreview.github.io/?https://github.com/SergeyTsVL/tsaser.github.io/blob/main/Game.html">Разработка игр</a>
+        </div>
+        <div class="brick">
+          <a href="http://htmlpreview.github.io/?https://github.com/SergeyTsVL/tsaser.github.io/blob/main/Random.html">Разное</a>
+        </div>
+      </div>
+
+      <h2 class="secondary">ВЫПОЛНЕННЫЕ ПРОЕКТЫ</h2>
+<!--       <div class="job-info">-->
+<!--        <p>Аттестационная работа</p>-->
+<!--        <time>2024</time>-->
+<!--      </div>-->
+<!--      <h3>Анализатор прайс-листов.</h3>-->
+<!--      <p class="job-detail">Программа должна загрузить данные из всех прайс-листов и предоставить интерфейс для поиска-->
+<!--        товара по фрагменту названия с сорторовкой по цене за килогорамм.-->
+<!--        Интерфейс для поиска реализовать через консоль, циклически получая информацию от пользователя.-->
+<!--        Если введено слово "exit", то цикл обмена с пользователем завершается, программа выводит сообщение о том, что-->
+<!--        работа закончена и завершает свою работу. </p>-->
+<!--      <a href="https://github.com/SergeyTsVL/Internship/tree/main">Анализатор прайс-листов</a>-->
+<!--      <div class="job-info">-->
+<!--        <p>Работа в рамках обучения</p>-->
+<!--        <time>2024</time>-->
+<!--      </div>-->
+<!--      <h3>Скрипт для парсинга сайта https://coinmarketcap.com/.</h3>-->
+<!--      <p class="job-detail">Этот скрипт позволяет вывести первый 100 криптовалют их цену и капитализацию и передать-->
+<!--        данные в файл формата.csv </p>-->
+<!--      <a href="https://github.com/SergeyTsVL/555/blob/main/DZ_PARSING.py">Скрипт</a>-->
+<!--      <div class="job-info">-->
+<!--        <p>Работа в рамках стажировки</p>-->
+<!--        <time>2024</time>-->
+<!--      </div>-->
+<!--      <h3>Проект для анализа и визуализации данных об акциях.</h3>-->
+<!--      <p class="job-detail">Этот проект предназначен для загрузки исторических данных об акциях и их визуализации.-->
+<!--        Он использует библиотеку yfinance для получения данных и matplotlib для создания графиков. Пользователи могут-->
+<!--        выбирать различные тикеры и временные периоды для анализа, а также просматривать движение цен и скользящие-->
+<!--        средние на графике. </p>-->
+<!--      <a href="https://github.com/SergeyTsVL/Project1_internship111/tree/8">Анализ и визуализация данных</a>-->
+<!--      <div class="job-info">-->
+<!--        <p>Работа в рамках стажировки</p>-->
+<!--        <time>2024</time>-->
+<!--      </div>-->
+<!--      <h3>Программа для создания изображений на основе TKinter.</h3>-->
+<!--      <p class="job-detail">Данная программа представляет собой пример использования библиотеки TKinter для создания-->
+<!--        графического интерфейса.. </p>-->
+<!--      <a href="https://github.com/SergeyTsVL/Project1_internship111/blob/2.7/drawing_app.py">Программа на основе TKinter</a>-->
+      <div class="job-info">
+        <p>Работа в рамках стажировки</p>
+        <time>2024</time>
+      </div>
+      <h3>Многофункциональный телеграм-бот.</h3>
+      <p class="job-detail"> Данный бот сейчас умеет работать с фотографиями и делать ASCII-арт.  </p>
+      <a href="https://github.com/SergeyTsVL/Telegramm_Bot/tree/3.8">Многофункциональный телеграм-бот</a>
+<!--      <div class="job-info">-->
+<!--        <p>Дипломная работа</p>-->
+<!--        <time>2024</time>-->
+<!--      </div>-->
+<!--      <h3>Платформа распознавания объектов</h3>-->
+<!--      <p class="job-detail">Это веб-приложение на базе фреймворка Django, которое позволяет пользователям применять-->
+<!--        предобученные модели для обнаружения и классификации объектов на фотографиях. Приложение поддерживает механизмы-->
+<!--        регистрации и авторизации пользователей, что позволяет каждому пользователю создавать аккаунты и видеть только-->
+<!--        свои загруженные изображения.</p>-->
+<!--      <a href="https://github.com/SergeyTsVL/Dipl/tree/master">Платформа распознавания объектов</a>-->
+
+<!--      <div class="job-info">-->
+<!--        <p>Работа в рамках стажировки</p>-->
+<!--        <time>2024</time>-->
+<!--      </div>-->
+<!--      <h3>Журнал тренировок.</h3>-->
+<!--      <p class="job-detail">Импортируются модули tkinter, ttk из tkinter для работы с графическим интерфейсом-->
+<!--        пользователя, Toplevel для создания новых окон, messagebox для вывода сообщений пользователю, json для работы с-->
+<!--        данными в формате JSON, datetime для работы с датами и временем. Переменная data_file хранит имя файла, в-->
+<!--        который будут сохраняться данные о тренировках в формате JSON</p>-->
+<!--      <a href="https://github.com/SergeyTsVL/Training_Log/blob/1.8">Журнал тренировок</a>-->
+
+<!--      <div class="job-info">-->
+<!--        <p>Работа в рамках стажировки</p>-->
+<!--        <time>2024</time>-->
+<!--      </div>-->
+<!--      <h3>Доска объявлений на джанго.</h3>-->
+<!--      <p class="job-detail">В данном проекте используется рендеринг шаблонов, авторизация и регистрация пользователей,-->
+<!--        добавление/удаление фотографий/описания, пагинация, возможноть ставить лайки/дизлайки, вывод статистических-->
+<!--        данных пользователей.</p>-->
+<!--      <a href="https://github.com/SergeyTsVL/DjangoProject/tree/1.8">Доска объявлений</a>-->
+
+<!--      <div class="job-info">-->
+<!--        <p>Тестовое задание на вакансию Junior Python developer в компанию Effective Mobile (https://effective-mobile.ru/)</p>-->
+<!--        <time>2025</time>-->
+<!--      </div>-->
+<!--      <h3>Разработка системы управления заказами в кафе</h3>-->
+<!--      <p class="job-detail">Описание Необходимо разработать полнофункциональное веб-приложение на Django для управления-->
+<!--        заказами в кафе. Приложение должно позволять добавлять, удалять, искать, изменять и отображать заказы. </p>-->
+<!--      <a href="https://github.com/SergeyTsVL/Orders_at_the_cafe">Система управления заказами</a>-->
+
+<!--      <div class="job-info">-->
+<!--        <p>Работа в рамках стажировки</p>-->
+<!--        <time>2025</time>-->
+<!--      </div>-->
+<!--      <h3>Доработка игры в жанре "Tower Defense"</h3>-->
+<!--      <p class="job-detail">Проект является реализацией игры в жанре "Tower Defense", где игроку предстоит защищать-->
+<!--        базу от волн врагов, расставляя башни.</p>-->
+<!--      <p class="job-detail">Проработано в части:-->
+<!--        <li> Убрано постоянное отображение позиций.</li>-->
+<!--        <li>Добавлен звук к выстрелам и появлению врагов.</li>-->
+<!--        <li>Добавить новый тип башни.</li>-->
+<!--        <li>Сделано несколько путей для врагов, и при запуске путь выбирался случайно.</li>-->
+<!--        <li>Добавлена система улучшений башен.</li>-->
+<!--        <li>Увеличено количество денег игрока при уничтожении врагов.</li>-->
+<!--        <li>Созданы более разнообразные враги.</li>-->
+<!--        <li>Добавлено больше волн врагов.</li>-->
+<!--      </p>-->
+<!--      <a href="https://github.com/SergeyTsVL/tower_defence/tree/main">Tower Defense Game</a>-->
+
+<!--      <div class="job-info">-->
+<!--        <p>Тестовое задание на вакансию Junior Python developer в компанию ООО «ИТ Продажи»</p>-->
+<!--        <time>2025</time>-->
+<!--      </div>-->
+<!--      <h3>Разработка системы управления заказами в кафе</h3>-->
+<!--      <p class="job-detail">Требуется создать простую API-систему, имитирующую деятельно службы доставки.</p>  -->
+<!--      <p><a href="https://kemerovo.hh.ru/vacancy/111177623?hhtmFrom=negotiation_list">Ссылка на вакансию</a></p>-->
+<!--      <p><a href="https://github.com/SergeyTsVL/TZ_vacancy/blob/main/README.md">Система управления заказами</a></p>-->
+
+<!--      <div class="job-info">-->
+<!--        <p>Тестовое задание на вакансию Программист/Разработчик Python в компанию ООО ФОРА»</p>-->
+<!--        <time>2025</time>-->
+<!--      </div>-->
+<!--      <h3>Разработка системы расстановки призовых мест по категориям спортсменов</h3>-->
+<!--      <p class="job-detail">В файле race_data.json находятся данные о соревновании, в котором участвуют 100000-->
+<!--        спортсменов. В файлах m15/16/18 и w15/16/18.txt находятся данные о призовом фонде для каждой категории-->
+<!--        спортсменов. У каждого спортсмена есть категория, порядковый номер, имя и фамилия. А также время старта и время-->
+<!--        финиша. В файлах о призовом фонде находятся данные в виде "№ место Приз". Необходимо рассчитать время забега-->
+<!--        каждого спортсмена по категориям и составить JSON файлы вида json...</p>-->
+<!--      <p><a href="https://kemerovo.hh.ru/vacancy/117522690?hhtmFrom=negotiation_list">Ссылка на вакансию</a></p>-->
+<!--      <p><a href="https://github.com/SergeyTsVL/Analitica_100_000">Система расстановки призовых мест</a></p>-->
+<!--      <p><a href="http://htmlpreview.github.io/?https://github.com/SergeyTsVL/tsaser.github.io/blob/main/123.html">123</a></p>-->
+<!--       <p><a href="http://htmlpreview.github.io/?https://github.com/SergeyTsV/tsaser.github.io/blob/main/123.html">123</a></p> -->
+<!--      <h2 class="secondary"><i class="fa-solid fa-person-shelter"></i> Рекомендации</h2>-->
+<!--      <div class="ref">-->
+<!--        <div class="col">-->
+<!--          <h3>???????</h3>-->
+<!--          <p>Duckduco Inc. / CEO</p>-->
+<!--          <p>Phone: +123-456-7890</p>-->
+<!--          <p>Email: jane@duckduco.com</p>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--          <h3>???????</h3>-->
+<!--          <p>Duckduco Inc. / CEO</p>-->
+<!--          <p>Phone: +123-456-7890</p>-->
+<!--          <p>Email: barak@duckduco.com</p>-->
+        </div>
+      </div>
+    </main><!-- main-body -->
+  </section>
+</body>
+</html>
